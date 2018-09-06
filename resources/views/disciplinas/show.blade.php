@@ -1,5 +1,8 @@
 <h1>{{ $disciplina->titulo }}</h1>
 <p>{{$disciplina->ementa}}</p>
+<form method="GET" action="/disciplinas/{{ $disciplina->id }}/turmas/create">
+    <button type="submit">Inserir Turma</button>
+</form>
 <form method="GET" action="/disciplinas/{{ $disciplina->id }}/edit">
   <button type="submit">Editar</button>
 </form>
